@@ -1,162 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 
 :root {
-    --main: #2E3035;
-    --main_background: #1a1c21;
-    --accent: #171544;
-    --accent_light: #211f4e;
-    --book_background: #24262b;
-    
-    --main_text: #fff;
-    --logo_text: #fff;
-    --slogan_text: #fffdd0;
+  --main: #2e3035;
+  --main_background: #1a1c21;
+  --accent: #171544;
+  --accent_light: #211f4e;
+  --book_background: #24262b;
 
-    --main_border: solid 1px var(--main_text);
+  --main_text: #fff;
+  --logo_text: #fff;
+  --slogan_text: #fffdd0;
+
+  --main_border: solid 1px var(--main_text);
 }
 
-
-
 * {
-    font-family: 'Varela', Roboto, sans-serif;
+  font-family: "Varela", Roboto, sans-serif;
 }
 
 html,
 body {
-    margin: 0;
-    background-color: var(--main);
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    color: var(--main_text);
+  margin: 0;
+  background-color: var(--main);
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--main_text);
 }
 
-
-
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url(../images/index.png) center no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 248px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../images/index.png) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 248px;
 }
 
 .intro_logo {
-    margin-top: 10px;
-    margin-bottom: -20px;
-    text-align: center;
-    letter-spacing: -4px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 110px;
-    font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  text-align: center;
+  letter-spacing: -4px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 110px;
+  font-weight: normal;
 }
 
 .intro_slogan {
-    text-align: center;
-    letter-spacing: -1px;
-    color: var(--slogan_text);
-    font-family: 'Varela Round', sans-serif;
-    font-size: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: var(--slogan_text);
+  font-family: "Varela Round", sans-serif;
+  font-size: 40px;
 }
 
-
-
 .wrapper {
-    margin-bottom: -40px;
-    min-height: 100%;
+  margin-bottom: -40px;
+  min-height: 100%;
 }
 
 .theme {
-    margin: 1.25em auto 0;
-    border: var(--main_border);
-    border-radius: 5px;
-    box-shadow: none;
-    background: var(--book_background);
-    width: 1080px;
-    overflow: hidden;
+  margin: 1.25em auto 0;
+  border: var(--main_border);
+  border-radius: 5px;
+  box-shadow: none;
+  background: var(--book_background);
+  width: 1080px;
+  overflow: hidden;
 }
 
 .theme .name {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0.3em 25px;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0.3em 25px;
 }
 
-
 .collapsible {
-    outline: none;
-    border: none;
-    border-top: var(--main_border);
-    background-color: var(--accent);
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    color: var(--main_text);
-    font-size: 21px;
+  outline: none;
+  border: none;
+  border-top: var(--main_border);
+  background-color: var(--accent);
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  color: var(--main_text);
+  font-size: 21px;
 }
 
 .collapsible:after {
-    font-family: monospace;
-    font-size: 24px;
-    float: right;
-    color: var(--main_text);
-    font-weight: bold;
-    content: "\002B"; /* Plus  (+) sign */
+  font-family: monospace;
+  font-size: 24px;
+  float: right;
+  color: var(--main_text);
+  font-weight: bold;
+  content: "\002B"; /* Plus  (+) sign */
 }
 
 .active:after {
-    font-weight: bold;
-    content: "\2212"; /* Minus (-) sign */
+  font-weight: bold;
+  content: "\2212"; /* Minus (-) sign */
 }
 
 .active,
 .collapsible:hover {
-    background-color: var(--accent_light);
+  background-color: var(--accent_light);
 }
 
-
 .content {
-    box-sizing: border-box;
-    display: none;
-    background-color: var(--main_background);
-    padding: 0 1em;
-    overflow: hidden;
-    font-size: 14px;
+  box-sizing: border-box;
+  display: none;
+  background-color: var(--main_background);
+  padding: 0 1em;
+  overflow: hidden;
+  font-size: 14px;
 }
 
 .content a,
 .content a:visited {
-    color: var(--slogan_text);
-    text-decoration: none;
+  color: var(--slogan_text);
+  text-decoration: none;
 }
 
 .content dt {
-    margin-top: 13px;
-    margin-left: 1.3em;
-    font-size: 19px;
+  margin-top: 13px;
+  margin-left: 1.3em;
+  font-size: 19px;
 }
 
 .content dd {
-    margin-bottom: 13px;
-    margin-left: 0;
-    font-style: italic;
+  margin-bottom: 13px;
+  margin-left: 0;
+  font-style: italic;
 }
 
-.push { height: 1.25em; }
-
-
+.push {
+  height: 1.25em;
+}
 
 @media only screen and (max-width: 1080px) {
-    :root {
-        --main_border: solid 2px var(--main_text);
-    }
+  :root {
+    --main_border: solid 2px var(--main_text);
+  }
 
-    .book {
-        box-sizing: border-box;
-        width: 100%;
-    }
+  .book {
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
-
